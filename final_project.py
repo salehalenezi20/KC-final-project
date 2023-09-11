@@ -4,16 +4,21 @@ from tkinter import messagebox
 from PIL import Image,ImageTk 
 import ttkbootstrap
 
+# the api from open weather
 
 def get_weather(city):
     API_key="0d9a41652b4e798eb120e24cca445fad"
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_key}"
     res = requests.get(url)
 
+# error
+
     if res.status_code == 404:
         messagebox.showerror("Error", "city not found")
         return None
     
+#the temp and city 
+     
     weather = res.json()
     icon_id = weather['weather'][0]['icon']
     temperature = weather['main']['temp'] - 273.15
@@ -25,6 +30,7 @@ def get_weather(city):
     return (icon_url, temperature, description, city, country)
 
 
+#the temp results 
 
 def search():
     city = city_entry.get()
@@ -43,7 +49,7 @@ def search():
     description_label.configure(text=f"Description: {description}")
 
 
-
+# geometry and title
 
 root = ttkbootstrap.Window(themename="morph")
 root.title("weather app")
