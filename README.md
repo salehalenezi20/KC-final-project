@@ -13,7 +13,7 @@
 يرنامج طقس
 # شرح الفكرة
 المشكلة والحلول المطروحة إن وجدت
-برنامج يعلمك حتاة الطقس
+برنامج يعلمك حالة الطقس
 
 # الأعمال المستقبلية
  تطوير القطع الالكترونيه والالعاب 
@@ -22,14 +22,14 @@
 
 > Fill out project information in English ⬇️
 ### Student Name
-
+saleh faisal alenezi
 
 ### Project Name
-
+weather app
 # Idea
 Problem and solutions if found 
 
 
 # Future Work 
-
+mechatronics programming
 
